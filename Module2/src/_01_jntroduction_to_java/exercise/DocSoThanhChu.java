@@ -5,94 +5,142 @@ import java.util.Scanner;
 public class DocSoThanhChu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        String number ="" ;
+        String number2= "";
+        String number3="";
+        int chuc= (a/10)%10;
+        int donVi= a%10;
+        int tram=a/100;
 
-        System.out.println("Nhập số cần đọc");
-        String num = scanner.nextInt();
-        switch (num){
+        if (a < 0 ) {
+            System.out.println("out of ability");
+        } else {
+            switch (donVi) {
+                case 1:
+                    number = "one";
+                    break;
+                case 2:
+                    number = "two";
+                    break;
+                case 3:
+                    number = "three";
+                    break;
+                case 4:
+                    number = "four";
+                    break;
+                case 5:
+                    number = "five";
+                    break;
+                case 6:
+                    number = "six";
+                    break;
+                case 7:
+                    number = "seven";
+                    break;
+                case 8:
+                    number = "eight";
+                    break;
+                case 9:
+                    number = "nine";
+                    break;
+                case 0:
+                    number="";
+            }
+        }
+        switch (tram){
             case 1:
-                System.out.println("One");
+                number3= "one hundred ";
                 break;
             case 2:
-                System.out.println("Two");
+                number3= "two hundred ";
                 break;
             case 3:
-                System.out.println("Three");
+                number3= "three hundred ";
                 break;
             case 4:
-                System.out.println("Four");
+                number3= "four hundred ";
                 break;
             case 5:
-                System.out.println("Five");
+                number3= "five hundred ";
                 break;
             case 6:
-                System.out.println("Six");
+                number3= "six hundred ";
                 break;
             case 7:
-                System.out.println("Seven");
+                number3= "seven hundred ";
                 break;
             case 8:
-                System.out.println("Eight");
+                number3= "eight hundred ";
                 break;
             case 9:
-                System.out.println("Nine");
-                break;
-            case 10:
-                System.out.println("Ten");
-                break;
-            case 11:
-                System.out.println("Eleven");
-                break;
-            case 12:
-                System.out.println("Twelve");
-                break;
-            case 13:
-                System.out.println("Thirteen");
-                break;
-            case 14:
-                System.out.println("Fourteen");
-                break;
-            case 15:
-                System.out.println("Fifteen");
-                break;
-            case 16:
-                System.out.println("Sixteen");
-                break;
-            case 17:
-                System.out.println("Seventeen");
-                break;
-            case 18:
-                System.out.println("Eighteen");
-                break;
-            case 19:
-                System.out.println("Nineteen");
-                break;
-            case 20:
-                System.out.println("Twenty");
-                break;
-            case 30:
-                System.out.println("Thirty");
-                break;
-            case 40:
-                System.out.println("Forty");
-                break;
-            case 50:
-                System.out.println("Fifty");
-                break;
-            case 60:
-                System.out.println("Sixty");
-                break;
-            case 70:
-                System.out.println("Seventy");
-                break;
-            case 80:
-                System.out.println("Eighty");
-                break;
-            case 90:
-                System.out.println("Ninety");
-                break;
-            case 100:
-                System.out.println("One hundred");
-                break;
+                number3= "nine hundred ";
+        }
+        if (chuc==1){
+            switch (donVi){
+                case 0:
+                    number2= "ten";
+                    break;
+                case 1:
+                    number2= "evelen";
+                    break;
+                case 2:
+                    number2= "twelve";
+                    break;
+                case 3:
+                    number2= "thirteen";
+                    break;
+                case 4:
+                    number2= "fourteen";
+                    break;
+                case 5:
+                    number2= "fifteen";
+                    break;
+                case 6:
+                    number2="sixteen";
+                    break;
+                case 7:
+                    number2="seventeen";
+                    break;
+                case 8:
+                    number2="eighteen";
+                    break;
+                case 9:
+                    number2="nineteen";
+            }
+
+        }else
+            switch (chuc){
+                case 2:
+                    number2= "twenty ";
+                    break;
+                case 3:
+                    number2= "thirty ";
+                    break;
+                case 4:
+                    number2="forty ";
+                    break;
+                case 5:
+                    number2="fifty ";
+                    break;
+                case 6:
+                    number2="sixty ";
+                    break;
+                case 7:
+                    number2="seventy ";
+                    break;
+                case 8:
+                    number2="Eighty ";
+                    break;
+                case 9:
+                    number2= "ninety ";
+            }
+        if (chuc == 1 ){
+            System.out.println(number3+"and "+number2);
+        }else if( a%100==0){
+            System.out.println(number3);
+        }else {
+            System.out.println(number3+ "and "+number2+number);
         }
     }
 }
