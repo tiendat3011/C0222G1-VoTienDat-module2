@@ -6,14 +6,14 @@ public class DocSoThanhChu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        String number ="" ;
-        String number2= "";
-        String number3="";
-        int chuc= (a/10)%10;
-        int donVi= a%10;
-        int tram=a/100;
+        String number = "";
+        String number2 = "";
+        String number3 = "";
+        int chuc = (a / 10) % 10;
+        int donVi = a % 10;
+        int tram = a / 100;
 
-        if (a < 0 ) {
+        if (a < 0) {
             System.out.println("out of ability");
         } else {
             switch (donVi) {
@@ -45,102 +45,102 @@ public class DocSoThanhChu {
                     number = "nine";
                     break;
                 case 0:
-                    number="";
+                    number = "";
             }
         }
-        switch (tram){
+        switch (tram) {
             case 1:
-                number3= "one hundred ";
+                number3 = "one hundred ";
                 break;
             case 2:
-                number3= "two hundred ";
+                number3 = "two hundred ";
                 break;
             case 3:
-                number3= "three hundred ";
+                number3 = "three hundred ";
                 break;
             case 4:
-                number3= "four hundred ";
+                number3 = "four hundred ";
                 break;
             case 5:
-                number3= "five hundred ";
+                number3 = "five hundred ";
                 break;
             case 6:
-                number3= "six hundred ";
+                number3 = "six hundred ";
                 break;
             case 7:
-                number3= "seven hundred ";
+                number3 = "seven hundred ";
                 break;
             case 8:
-                number3= "eight hundred ";
+                number3 = "eight hundred ";
                 break;
             case 9:
-                number3= "nine hundred ";
+                number3 = "nine hundred ";
         }
-        if (chuc==1){
-            switch (donVi){
+        if (chuc == 1) {
+            switch (donVi) {
                 case 0:
-                    number2= "ten";
+                    number2 = "ten";
                     break;
                 case 1:
-                    number2= "evelen";
+                    number2 = "evelen";
                     break;
                 case 2:
-                    number2= "twelve";
+                    number2 = "twelve";
                     break;
                 case 3:
-                    number2= "thirteen";
+                    number2 = "thirteen";
                     break;
                 case 4:
-                    number2= "fourteen";
+                    number2 = "fourteen";
                     break;
                 case 5:
-                    number2= "fifteen";
+                    number2 = "fifteen";
                     break;
                 case 6:
-                    number2="sixteen";
+                    number2 = "sixteen";
                     break;
                 case 7:
-                    number2="seventeen";
+                    number2 = "seventeen";
                     break;
                 case 8:
-                    number2="eighteen";
+                    number2 = "eighteen";
                     break;
                 case 9:
-                    number2="nineteen";
+                    number2 = "nineteen";
             }
 
-        }else
-            switch (chuc){
+        } else
+            switch (chuc) {
                 case 2:
-                    number2= "twenty ";
+                    number2 = "twenty ";
                     break;
                 case 3:
-                    number2= "thirty ";
+                    number2 = "thirty ";
                     break;
                 case 4:
-                    number2="forty ";
+                    number2 = "fourty ";
                     break;
                 case 5:
-                    number2="fifty ";
+                    number2 = "fifty ";
                     break;
                 case 6:
-                    number2="sixty ";
+                    number2 = "sixty ";
                     break;
                 case 7:
-                    number2="seventy ";
+                    number2 = "seventy ";
                     break;
                 case 8:
-                    number2="Eighty ";
+                    number2 = "Eighty ";
                     break;
                 case 9:
-                    number2= "ninety ";
+                    number2 = "ninety ";
             }
-        if (chuc == 1 ){
-            System.out.println(number3+"and "+number2);
-        }else if( a%100==0){
+        if (chuc == 1 && tram == 0) {
+            System.out.println(number2);
+        } else if (a % 100 == 0) {
             System.out.println(number3);
-        }else {
-            System.out.println(number3+ "and "+number2+number);
+        } else {
+            System.out.println(number3 + "and " + number2 + number);
         }
     }
 }
