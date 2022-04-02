@@ -1,0 +1,154 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch DaoNguocCacPhanTuTrongMang",
+            "request": "launch",
+            "mainClass": "_03_array.pratice.DaoNguocCacPhanTuTrongMang",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch CacSoNguyenToNhoHon100",
+            "request": "launch",
+            "mainClass": "_02_loop.exercise.CacSoNguyenToNhoHon100",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch Show20PrimeNumber",
+            "request": "launch",
+            "mainClass": "_02_loop.exercise.Show20PrimeNumber",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch HienThiCacLoaiHinh",
+            "request": "launch",
+            "mainClass": "_02_loop.exercise.HienThiCacLoaiHinh",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThietKeMenuChoUngDung",
+            "request": "launch",
+            "mainClass": "_02_loop.pratice.ThietKeMenuChoUngDung",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch TimUocChungLonNhat",
+            "request": "launch",
+            "mainClass": "_02_loop.pratice.TimUocChungLonNhat",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch SystemTime",
+            "request": "launch",
+            "mainClass": "SystemTime",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChuyenDoiTienTe",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.exercise.ChuyenDoiTienTe",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch DocSoThanhChu",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.exercise.DocSoThanhChu",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch HienThiLoiChao",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.exercise.HienThiLoiChao",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.exercise.test",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch GiaiPhuongTrinhBacNhat",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.GiaiPhuongTrinhBacNhat",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch HienThiThoiGianCuaHeThong",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.HienThiThoiGianCuaHeThong",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch KhaiBaoVaSuDungBien",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.KhaiBaoVaSuDungBien",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch KiemTraNamNhuan",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.KiemTraNamNhuan",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch SuDungToanTu",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.SuDungToanTu",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch TinhChiSoCanNangCuaCoThe",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.TinhChiSoCanNangCuaCoThe",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch TinhSoNgayTrongThang",
+            "request": "launch",
+            "mainClass": "_01_jntroduction_to_java.pratice.TinhSoNgayTrongThang",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch KiemTraSoNguyenTo",
+            "request": "launch",
+            "mainClass": "_02_loop.pratice.KiemTraSoNguyenTo",
+            "projectName": "module2_d68396ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch TinhTienLaiChoVay",
+            "request": "launch",
+            "mainClass": "_02_loop.pratice.TinhTienLaiChoVay",
+            "projectName": "module2_d68396ad"
+        }
+    ]
+}
