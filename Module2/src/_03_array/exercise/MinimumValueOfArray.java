@@ -1,6 +1,7 @@
 package _03_array.exercise;
 
-public class TimGiaTriNhoNhatTrongMang {
+public class MinimumValueOfArray {
+    // tìm giá trị nhỏ nhất của mảng
     public static void main(String[] args) {
         int[] arr = {10, 9, 8, 7, 6, 5, 11};
         int index = minValue(arr);

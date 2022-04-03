@@ -3,7 +3,8 @@ package _03_array.exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class XoaPhanTuKhoiMang {
+public class RemoveElementFromArray {
+    //xóa phần tử khỏi mảng
 //    public static void main(String[] args) {
 //        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 //        Scanner scanner = new Scanner(System.in);
@@ -47,7 +48,7 @@ public static void main(String[] args) {
             if (i == arr.length - 1) {
                 arr[i] = 0;
             } else {
-                arr[i] = arr[(i + 1)];
+                arr[i] = arr[i + 1];
             }
         }
         return arr;

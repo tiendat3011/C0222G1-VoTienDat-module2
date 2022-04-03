@@ -2,7 +2,8 @@ package _03_array.exercise;
 
 import java.util.Scanner;
 
-public class TimPhanTuLonNhatTrongMang2Chieu {
+public class MaximumValueIn2dArray {
+    // phần tử lớn nhất trong mảng 2 chiều
     public static void main(String[] args) {
         int m;
         int n;
