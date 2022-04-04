@@ -25,13 +25,13 @@ public class AddElementToArray {
 
     public static int[] formatArray(int i, int j, int[] arr) {
 
-        int n2 = 0;
-        int n1 = arr[j];
+        int temp = arr[j];
+        int temp2 =0;
         arr[j] = i;
-        for (; j < arr.length; j++) {
-            n2 = arr[j];
-            arr[j] = n1;
-            n1 = n2;
+        for (i++; j < arr.length; j++) {
+            temp2 = arr[j];
+            arr[j] = temp;
+            temp = temp2;
         }
         return arr;
     }
