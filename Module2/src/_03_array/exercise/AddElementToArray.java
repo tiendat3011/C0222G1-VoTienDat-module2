@@ -15,23 +15,23 @@ public class AddElementToArray {
         int x = scanner.nextInt();
         System.out.println("Nhập vị trí");
         int index = scanner.nextInt();
-        if (index <= -1 && index >= array.length-1){
+        if (index <= -1 && index >= array.length - 1) {
             System.out.println("không chèn được phần tử vào mảng");
-        }else {
+        } else {
             System.out.println(Arrays.toString(formatArray(x, index, array)));
 
         }
     }
 
-    public static int[] formatArray(int i, int j, int[]arr) {
+    public static int[] formatArray(int i, int j, int[] arr) {
 
         int n2 = 0;
         int n1 = arr[j];
-        arr[j]=i;
-        for (;j<arr.length;j++){
-            n2= arr[j];
-            arr[j]=n1;
-            n1=n2;
+        arr[j] = i;
+        for (; j < arr.length; j++) {
+            n2 = arr[j];
+            arr[j] = n1;
+            n1 = n2;
         }
         return arr;
     }
