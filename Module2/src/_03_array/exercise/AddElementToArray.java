@@ -12,26 +12,26 @@ public class AddElementToArray {
         Scanner scanner = new Scanner(System.in);
         System.out.println(Arrays.toString(array));
         System.out.println("Nhập số cần chèn");
-        int x = scanner.nextInt();
+        int num = scanner.nextInt();
         System.out.println("Nhập vị trí");
         int index = scanner.nextInt();
         if (index <= -1 && index >= array.length - 1) {
             System.out.println("không chèn được phần tử vào mảng");
         } else {
-            System.out.println(Arrays.toString(formatArray(x, index, array)));
+            System.out.println(Arrays.toString(formatArray(num, index, array)));
 
         }
     }
 
-    public static int[] formatArray(int i, int j, int[] arr) {
+    public static int[] formatArray(int index, int num, int[] arr) {
 
-        int temp = arr[j];
-        int temp2 =0;
-        arr[j] = i;
-        for (i++; j < arr.length; j++) {
-            temp2 = arr[j];
-            arr[j] = temp;
-            temp = temp2;
+        int arr1 = arr[num];
+        int arr2 =0;
+        arr[num] = index;
+        for (; num < arr.length; num++) {
+            arr2 = arr[num];
+            arr[num] = arr1;
+            arr1 = arr2;
         }
         return arr;
     }

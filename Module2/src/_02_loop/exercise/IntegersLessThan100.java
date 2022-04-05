@@ -1,6 +1,6 @@
 package _02_loop.exercise;
 
-public class CacSoNguyenToNhoHon100 {
+public class IntegersLessThan100 {
     public static void main(String[] args) {
         int num = 2;
         while (num < 100) {

@@ -1,40 +1,8 @@
-package _04_ClassesAndObjectsInJava.exercise;
+package _04_classes_and_objects_in_java.exercise.euadratic_equation;
 
 import java.util.Scanner;
 
-public class QuadraticEquation {
-    double a, b, c;
-
-    public QuadraticEquation(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
-
-    public double getA() {
-        return a;
-    }
-
-    public double getB() {
-        return b;
-    }
-
-    public double getC() {
-        return c;
-    }
-
-    public double getDiscriminant() {
-        return (b * b - 4 * a * c);
-    }
-
-    public double getRoot1() {
-        return (-b + Math.sqrt(getDiscriminant()) / 2 * a);
-    }
-
-    public double getRoot2() {
-        return (-b - Math.sqrt(getDiscriminant()) / 2 * a);
-    }
-
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập a : ");
@@ -57,4 +25,3 @@ public class QuadraticEquation {
         System.out.println(display);
     }
 }
-

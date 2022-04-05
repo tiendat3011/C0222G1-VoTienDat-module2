@@ -1,39 +1,17 @@
-package _04_ClassesAndObjectsInJava.exercise;
+package _04_classes_and_objects_in_java.exercise.stop_watch;
 
 import java.util.Scanner;
 
-public class StopWatch {
-    public double startTime;
-    public double endTime;
-    public StopWatch(){
-
-    }
-
-    public double getStartTime() {
-        return startTime;
-    }
-
-    public double getEndTime() {
-        return endTime;
-    }
-    public void start(){
-        this.startTime= System.currentTimeMillis();
-    }
-    public void stop(){
-        this.endTime=System.currentTimeMillis();
-    }
-    public double getElapsedTime(){
-        return this.endTime - this.startTime;
-    }
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
         System.out.println("Thời gian bắt đầu"+stopWatch.getStartTime());
-        
+
         int[] arr = new int[10000];
         for (int i = 0; i < arr.length ; i++) {
-            arr[i] = (int) Math.floor(Math.random()*100000);
+            arr[i] = (int) Math.floor(Math.random()*10000);
         }
         for (int i = 0; i < arr.length; i++) {
             int max = arr[i];
@@ -50,6 +28,3 @@ public class StopWatch {
         System.out.println("Mili giây : " + stopWatch.getElapsedTime());
     }
 }
-
-
-

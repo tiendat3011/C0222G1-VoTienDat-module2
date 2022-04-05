@@ -1,9 +1,7 @@
-package _04_ClassesAndObjectsInJava.exercise;
-
-import java.util.Arrays;
+package _04_classes_and_objects_in_java.exercise.fan;
 
 public class Fan {
-
+    protected static final int slow = 1, medium = 2, fast = 3;
     private int speed;
     private boolean status;
     private double radius;
@@ -50,6 +48,7 @@ public class Fan {
             return "FAST";
         }
     }
+
     public String toString() {
         if (this.status) {
             return "speed : " + setSpeed() + "\t" + " color : " + color + "\t" + "radius : " + radius + "\t" + " fan is on";
@@ -57,10 +56,5 @@ public class Fan {
             return " color : " + color + "\t" + "radius : " + radius + "\t" + " fan is off";
 
     }
-        public static void main(String[] args) {
-            Fan fan1 = new Fan(3, true, 10, "yellow");
-            Fan fan2 = new Fan(2, false, 5, "blue");
-            System.out.println(fan1.toString());
-            System.out.println(fan2.toString());
-        }
-    }
+
+}
