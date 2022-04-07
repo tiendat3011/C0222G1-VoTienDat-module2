@@ -1,7 +1,8 @@
 package _04_classes_and_objects_in_java.exercise.fan;
 
 public class Fan {
-    protected static final int SLOW = 1, MEDIUM = 2, FAST = 3;
+    public static final int SLOW = 1, MEDIUM = 2, FAST = 3;
+
     private int speed;
     private boolean status;
     private double radius;
