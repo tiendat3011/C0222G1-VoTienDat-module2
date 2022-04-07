@@ -14,16 +14,16 @@ public class Class2D {
         this.y = y;
     }
 
-    public float getX() {
-        return x;
+    public float getX(float x) {
+        return this.x;
     }
 
     public void setX(float x) {
         this.x = x;
     }
 
-    public float getY() {
-        return y;
+    public float getY(float y) {
+        return this.y;
     }
 
     public void setY(float y) {
@@ -42,5 +42,11 @@ public class Class2D {
         return arr;
     }
 
-
+    @Override
+    public String toString() {
+        return "Class2D{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

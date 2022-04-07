@@ -15,8 +15,8 @@ public class Class3D extends Class2D{
         super(x, y);
         this.z = z;
     }
-    public float getZ() {
-        return z;
+    public float getZ(float z) {
+        return this.z;
     }
 
     public void setZ(float z) {
@@ -27,9 +27,9 @@ public class Class3D extends Class2D{
         return arr2;
     }
     public void setXYZ(float x, float y, float z){
-        getX();
-        getY();
-        getZ();
+        getX(x);
+        getY(y);
+        getZ(z);
     }
 
     @Override
