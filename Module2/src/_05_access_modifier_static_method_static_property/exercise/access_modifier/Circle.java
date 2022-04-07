@@ -13,7 +13,11 @@ public class Circle {
 
     }
 
+    public Circle(double v, String indigo, boolean b) {
+    }
+
     public double getRadius() {
+
         return Radius;
     }
 
