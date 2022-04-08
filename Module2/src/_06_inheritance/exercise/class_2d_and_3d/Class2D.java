@@ -31,14 +31,14 @@ public class Class2D {
     }
 
     public void setXY(float x, float y) {
-    setX(x);
-    setY(y);
+        setX(x);
+        setY(y);
     }
 
     public float[] getXY() {
         float[] arr = new float[2];
-        arr[0]=x;
-        arr[1]=y;
+        arr[0] = x;
+        arr[1] = y;
         return arr;
     }
 

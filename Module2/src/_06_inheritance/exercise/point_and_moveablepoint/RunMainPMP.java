@@ -9,8 +9,8 @@ public class RunMainPMP {
 
         MoveablePoint moveablePoint = new MoveablePoint();
         System.out.println(moveablePoint);
-        MoveablePoint moveablePoint1 = new MoveablePoint(1.0f, 2.0f, 3.0f, 4.0f);
-        System.out.println(moveablePoint1);
-        System.out.println(moveablePoint1.move());
+        MoveablePoint movablePoint1 = new MoveablePoint(1.0f, 2.0f, 3.0f, 4.0f);
+        System.out.println(movablePoint1);
+        System.out.println(movablePoint1.move());
     }
 }
