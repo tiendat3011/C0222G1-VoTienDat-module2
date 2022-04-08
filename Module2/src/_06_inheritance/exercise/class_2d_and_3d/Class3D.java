@@ -2,19 +2,22 @@ package _06_inheritance.exercise.class_2d_and_3d;
 
 import java.util.Arrays;
 
-public class Class3D extends Class2D{
+public class Class3D extends Class2D {
     private float z = 0.0f;
 
-    public Class3D(){
+    public Class3D() {
 
     }
-    public Class3D(float z){
-        this.z=z;
+
+    public Class3D(float z) {
+        this.z = z;
     }
-    public Class3D(float x, float y,float z){
+
+    public Class3D(float x, float y, float z) {
         super(x, y);
         this.z = z;
     }
+
     public float getZ(float z) {
         return this.z;
     }
@@ -22,11 +25,13 @@ public class Class3D extends Class2D{
     public void setZ(float z) {
         this.z = z;
     }
-    public float[] getXYZ(){
-        float[] arr2= new float[3];
+
+    public float[] getXYZ() {
+        float[] arr2 = new float[3];
         return arr2;
     }
-    public void setXYZ(float x, float y, float z){
+
+    public void setXYZ(float x, float y, float z) {
         getX(x);
         getY(y);
         getZ(z);
@@ -34,7 +39,7 @@ public class Class3D extends Class2D{
 
     @Override
     public String toString() {
-        return "Class3D{" +super.toString()+
+        return "Class3D{" + super.toString() +
                 "z=" + z +
                 '}';
     }

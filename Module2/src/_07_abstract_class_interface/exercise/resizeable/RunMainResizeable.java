@@ -17,6 +17,5 @@ public class RunMainResizeable {
             a.resize(Math.random() * 1000);
         }
         System.out.println("\n");
-
     }
 }

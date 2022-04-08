@@ -1,6 +1,6 @@
-package _07_abstract_class_interface.exercise.resizeable;
+package _07_abstract_class_interface.exercise.colorable;
 
-public abstract class Shape {
+public class Shape {
     private String color = "green";
     private boolean filled = true;
 
@@ -10,9 +10,6 @@ public abstract class Shape {
     public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
-    }
-
-    public static void printShape(Shape[] shapes) {
     }
 
     public String getColor() {
@@ -37,8 +34,5 @@ public abstract class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
-
     }
-
-    public abstract void resize(double percent);
 }
