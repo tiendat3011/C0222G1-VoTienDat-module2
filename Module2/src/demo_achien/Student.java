@@ -1,4 +1,4 @@
-package exercise_demo_achien;
+package demo_achien;
 
 public class Student {
     private String name;

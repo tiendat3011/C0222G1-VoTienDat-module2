@@ -1,4 +1,4 @@
-package exercise_demo_achien;
+package demo_achien;
 
 import java.util.Arrays;
 import java.util.Scanner;
