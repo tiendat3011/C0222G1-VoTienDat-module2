@@ -13,12 +13,12 @@ public class PalindromeQueue {
         for (int i = 0; i < inputString.length(); i++) {
             stack.push(inputString.charAt(i));
         }
-       String a = "";
+       String arr = "";
         while (!stack.isEmpty()){
-            a = a+stack.pop();
+            arr = arr+stack.pop();
         }
-        System.out.println(a);
-        if (inputString.equals(a)){
+        System.out.println(arr);
+        if (inputString.equals(arr)){
             System.out.println("dung");
         }else {
             System.out.println("sai");
