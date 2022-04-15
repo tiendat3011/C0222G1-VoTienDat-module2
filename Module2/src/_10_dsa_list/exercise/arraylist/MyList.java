@@ -16,7 +16,9 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        ensureCapacity();
+        for (int i = size - 1; i >= index; i--) {
+            elements[i] = elements[i - 1];
+        }
         elements[index] = element;
         size++;
     }
@@ -88,8 +90,5 @@ public class MyList<E> {
             str.append("]");
             return str.toString();
         }
-    }
-
-    public void add(E i) {
     }
 }
