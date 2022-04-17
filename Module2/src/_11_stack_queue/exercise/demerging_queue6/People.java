@@ -1,4 +1,4 @@
-package _11_stack_queue.exercise.demerging_queue;
+package _11_stack_queue.exercise.demerging_queue6;
 
 public class People implements Comparable<People> {
     private String name;

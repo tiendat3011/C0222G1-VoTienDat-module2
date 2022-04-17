@@ -1,11 +1,11 @@
-package _11_stack_queue.exercise.tree_map;
+package _11_stack_queue.exercise.tree_map2;
 
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class Tree {
+public class OccurrencesInString {
     public static Scanner scanner = new Scanner(System.in);
-
+//[Bài tập] Đếm số lần xuất hiện của mỗi từ trong một chuỗi sử dụng Map
     public static void main(String[] args) {
         System.out.println("Nhap chuoi ");
         String string = scanner.nextLine().toLowerCase();

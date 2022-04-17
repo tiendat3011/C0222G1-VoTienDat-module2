@@ -51,12 +51,6 @@ public class ProductManagement implements Comparable <ProductManagement> {
 
     @Override
     public int compareTo(ProductManagement o) {
-        if (this.getId() > o.getId()){
-            return 1;
-        }else if (this.getId() < o.getId()){
-            return -1;
-        }else {
-            return 0;
-        }
+      return Float.compare(getPrice(),o.getPrice());
     }
 }

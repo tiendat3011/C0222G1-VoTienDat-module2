@@ -1,13 +1,13 @@
-package _11_stack_queue.exercise.demerging_queue;
+package _11_stack_queue.exercise.demerging_queue6;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Main {
-    public static Queue<People> NU = new LinkedList<>();
-    public static Queue<People> NAM = new LinkedList<>();
+    //[Optional] [Bài tập] Tổ chức dữ liệu hợp lý - Demerging sử dụng Queue
+    public static Queue<People> demergeQueueMale = new LinkedList<>();
+    public static Queue<People> demergeQueueFemale = new LinkedList<>();
 
     public static void main(String[] args) {
         People[] people = new People[5];
@@ -19,15 +19,15 @@ public class Main {
         Arrays.sort(people);
         for (People persons : people) {
             if (persons.isGender()) {
-                NAM.add(persons);
+                demergeQueueMale.add(persons);
             } else {
-                NU.add(persons);
+                demergeQueueFemale.add(persons);
             }
         }
-        for (People persons : NU) {
+        for (People persons : demergeQueueFemale) {
             System.out.println(persons);
         }
-        for (People persons : NAM) {
+        for (People persons : demergeQueueMale) {
             System.out.println(persons);
         }
     }

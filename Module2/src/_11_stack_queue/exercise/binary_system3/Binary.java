@@ -1,13 +1,11 @@
-package _11_stack_queue.exercise.binary_system;
+package _11_stack_queue.exercise.binary_system3;
 
-import javafx.scene.transform.Scale;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.Stack;
 
 public class Binary {
     public static void main(String[] args) {
+        //[Optional] [Bài tập] Chuyển đổi từ hệ thập phân sang hệ nhị phân
         Stack<Integer> stack = new Stack<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập số bất kì ");

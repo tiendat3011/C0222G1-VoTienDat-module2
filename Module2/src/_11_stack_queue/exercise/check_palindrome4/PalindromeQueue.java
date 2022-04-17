@@ -1,4 +1,4 @@
-package _11_stack_queue.exercise.check_palindrome;
+package _11_stack_queue.exercise.check_palindrome4;
 
 
 import java.util.Scanner;
@@ -6,6 +6,7 @@ import java.util.Stack;
 
 public class PalindromeQueue {
     public static void main(String[] args) {
+        //[Optional] [Bài tập] Kiểm tra chuỗi Palindrome sử dụng Queue
         System.out.println("nhap chuoi");
         Scanner scanner = new Scanner(System.in);
         String inputString = scanner.nextLine();
