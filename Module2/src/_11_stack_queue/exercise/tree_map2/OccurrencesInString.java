@@ -9,7 +9,7 @@ public class OccurrencesInString {
     public static void main(String[] args) {
         System.out.println("Nhap chuoi ");
         String string = scanner.nextLine().toLowerCase();
-        String[] newString = string.split(" ");
+        String[] newString = string.split(" ");//tách chuỗi
         int count = 1;
 
         TreeMap<String, Integer> treeMap = new TreeMap<>();

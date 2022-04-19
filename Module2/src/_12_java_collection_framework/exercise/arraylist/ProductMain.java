@@ -1,9 +1,6 @@
 package _12_java_collection_framework.exercise.arraylist;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ProductMain {
     public static List<ProductManagement> myList = new ArrayList<>();
@@ -14,10 +11,10 @@ public class ProductMain {
 
 
         myList.add(new ProductManagement("Iphone", 1, 5000));
-        myList.add(new ProductManagement("Xiao Mi",2, 4000));
-        myList.add(new ProductManagement("SamSung",3, 9000));
-        myList.add(new ProductManagement("HK Phone",4, 2000));
-        myList.add(new ProductManagement("B Phone",5, 1000));
+        myList.add(new ProductManagement("Xiao Mi", 2, 4000));
+        myList.add(new ProductManagement("SamSung", 3, 9000));
+        myList.add(new ProductManagement("HK Phone", 4, 2000));
+        myList.add(new ProductManagement("B Phone", 5, 1000));
 
 
         while (true) {
@@ -45,26 +42,27 @@ public class ProductMain {
                     remove();
                     break;
                 case 4:
-                    diplay();
+                    display();
                     break;
                 case 5:
                     find();
                     break;
                 case 6:
-                    sortByPrice();
+                    ascending();
                     break;
                 case 7:
-                    System.exit(7);
+                    descending();
                     break;
+                case 8:
+                    System.exit(7);
             }
         }
     }
 
-    public static void diplay() {
+    public static void display() {
         for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
-        Collections.sort(myList);
     }
 
     public static void add() {
@@ -75,7 +73,7 @@ public class ProductMain {
         System.out.println("id");
         int id = Integer.parseInt(input.nextLine());
         myList.add(new ProductManagement(name, id, price));
-        diplay();
+        display();
     }
 
     public static void fix() {
@@ -93,10 +91,8 @@ public class ProductMain {
                 myList.remove(i);
                 myList.add(new ProductManagement(name, id, price));
                 flag = true;
-                diplay();
+                display();
                 break;
-            } else {
-                flag = false;
             }
         }
         if (!flag) {
@@ -110,9 +106,10 @@ public class ProductMain {
         for (int i = 0; i < myList.size(); i++) {
             if (myList.get(i).getId() == id) {
                 myList.remove(i);
+                break;
             }
         }
-        diplay();
+        display();
     }
 
     public static void find() {
@@ -120,11 +117,9 @@ public class ProductMain {
         String name = input.nextLine();
         boolean flag = false;
         for (int i = 0; i < myList.size(); i++) {
-            if (myList.get(i).getName().equals(name)) {
+            if (myList.get(i).getName().contains(name)) {
                 System.out.println(myList.get(i));
                 flag = true;
-            } else {
-                flag = false;
             }
         }
         if (!flag) {
@@ -132,10 +127,22 @@ public class ProductMain {
         }
     }
 
-    public static void sortByPrice() {
-        Product1 product1 = new Product1();
-        Collections.sort(myList, product1);
-        diplay();
+    public static void descending() {
+        Collections.sort(myList, new Comparator<ProductManagement>() {
+            @Override
+            public int compare(ProductManagement o1, ProductManagement o2) {
+                return o2.getPrice() - o1.getPrice();
+            }
+        });
     }
 
+    public static void ascending() {
+        Collections.sort(myList, new Comparator<ProductManagement>() {
+            @Override
+            public int compare(ProductManagement o1, ProductManagement o2) {
+                return o1.getPrice() - o2.getPrice();
+            }
+        });
+        display();
+    }
 }

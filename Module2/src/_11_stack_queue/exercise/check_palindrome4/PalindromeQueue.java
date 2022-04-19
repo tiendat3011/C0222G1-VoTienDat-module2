@@ -25,5 +25,4 @@ public class PalindromeQueue {
             System.out.println("sai");
         }
     }
-
 }

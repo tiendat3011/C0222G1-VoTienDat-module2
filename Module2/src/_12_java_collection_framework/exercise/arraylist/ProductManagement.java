@@ -1,7 +1,7 @@
 package _12_java_collection_framework.exercise.arraylist;
 
 
-public class ProductManagement implements Comparable <ProductManagement> {
+public class ProductManagement  {
     private String name;
     private int id;
     private int price;
@@ -49,8 +49,5 @@ public class ProductManagement implements Comparable <ProductManagement> {
                 '}';
     }
 
-    @Override
-    public int compareTo(ProductManagement o) {
-      return Float.compare(getPrice(),o.getPrice());
-    }
+
 }
