@@ -6,8 +6,8 @@ import java.util.Queue;
 
 public class Main {
     //[Optional] [Bài tập] Tổ chức dữ liệu hợp lý - Demerging sử dụng Queue
-    public static Queue<People> demergeQueueMale = new LinkedList<>();
-    public static Queue<People> demergeQueueFemale = new LinkedList<>();
+    public static Queue<People> queueMale = new LinkedList<>();
+    public static Queue<People> queueFemale = new LinkedList<>();
 
     public static void main(String[] args) {
         People[] people = new People[5];
@@ -19,15 +19,15 @@ public class Main {
         Arrays.sort(people);
         for (People persons : people) {
             if (persons.isGender()) {
-                demergeQueueMale.add(persons);
+                queueMale.add(persons);
             } else {
-                demergeQueueFemale.add(persons);
+                queueFemale.add(persons);
             }
         }
-        for (People persons : demergeQueueFemale) {
+        for (People persons : queueFemale) {
             System.out.println(persons);
         }
-        for (People persons : demergeQueueMale) {
+        for (People persons : queueMale) {
             System.out.println(persons);
         }
     }
