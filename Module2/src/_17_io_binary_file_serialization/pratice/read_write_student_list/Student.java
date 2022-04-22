@@ -1,6 +1,4 @@
-package _17_io_binary_file_serialization.pratice.copy_large_files.read_write_student_list_to_binary_file;
-
-
+package _17_io_binary_file_serialization.pratice.read_write_student_list;
 import java.io.Serializable;
 
 public class Student implements Serializable {
@@ -52,4 +50,3 @@ public class Student implements Serializable {
                 '}';
     }
 }
-
