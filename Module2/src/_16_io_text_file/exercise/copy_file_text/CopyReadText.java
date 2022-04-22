@@ -8,7 +8,7 @@ public class CopyReadText {
 
     public static void main(String[] args) {
         try {
-            File read = new File("Module2\\src\\_16_io_text_file\\exercise\\copy_file_text\\Readd");
+            File read = new File("Module2\\src\\_16_io_text_file\\exercise\\copy_file_text\\Readd.txt.txt");
             FileReader fileReader = new FileReader(read);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;
@@ -25,7 +25,7 @@ public class CopyReadText {
 //
 //    public static void Copy(String[] args) {
         try {
-            File copy = new File("Module2\\src\\_16_io_text_file\\exercise\\copy_file_text\\Copyy");
+            File copy = new File("Module2\\src\\_16_io_text_file\\exercise\\copy_file_text\\Copyy.txt");
             FileWriter fileWriter = new FileWriter(copy);
 
             fileWriter.write("Võ Tiến Đạt C0222G1");
