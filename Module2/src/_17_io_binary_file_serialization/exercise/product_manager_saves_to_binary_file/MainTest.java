@@ -9,9 +9,11 @@ public class MainTest {
 
     public static class ReadAndWriteProduct {
         public static void write(String path, Object obj) {
+
             File file = new File(path);
             FileOutputStream fileOutputStream = null;
             ObjectOutputStream objectOutputStream = null;
+
             try {
                 fileOutputStream = new FileOutputStream(path);
                 objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -35,6 +37,7 @@ public class MainTest {
             FileInputStream fileInputStream = null;
             ObjectInputStream objectInputStream = null;
             Object object = null;
+
             try {
                 fileInputStream = new FileInputStream(file);
                 objectInputStream = new ObjectInputStream(fileInputStream);
@@ -68,6 +71,7 @@ public class MainTest {
         myList.add(new Product(4, "SamSung", "SS", 4000));
 //        System.out.println("Nhập đường dẫn");
 //        String path = input.nextLine();
+
         while (true) {
 
             System.out.println("1: Thêm sản phẩm ");
@@ -99,6 +103,7 @@ public class MainTest {
     public static void add() {
         myList = ReadAndWriteProduct.read(FILE1);
         System.out.println("Nhập ID");
+
         int id = Integer.parseInt(input.nextLine());
         boolean check = true;
         for (Product item : myList) {
@@ -109,12 +114,17 @@ public class MainTest {
         if (check) {
             System.out.println("Nhập tên");
             String name = input.nextLine();
+
             System.out.println("Nhập hãng");
             String manufacturer = input.nextLine();
+
             System.out.println("Nhập giá");
             int price = Integer.parseInt(input.nextLine());
+
             myList.add(new Product(id, name, manufacturer, price));
+
             ReadAndWriteProduct.write(FILE1, myList);
+
             System.out.println("Da them thanh cong");
         }
     }
